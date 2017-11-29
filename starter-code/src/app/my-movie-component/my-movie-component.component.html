@@ -1,3 +1,15 @@
-<p>
-  my-movie-component works!
-</p>
+<div class="centered">
+  <div width="90%">
+    <img style="width: 30%; height: 400px; display:inline-block" src="{{movie.poster}}" alt="">
+
+  <div style="display:inline-block; width:50%; vertical-align:top; padding-left:20px">
+      <p style="font-size:20px"><b>{{movie.title}} </b><br></p>
+      <p><b>Synopsis: </b> {{movie.synopsis}} <br></p>
+      <p><b>Genres: </b>{{movie.genres}} <br></p>
+      <p><b>Year: </b>{{movie.year}} <br></p>
+      <p><b>Director: </b>{{movie.director}} <br></p>
+      <p><b>Actors: </b>{{movie.actors}} <br></p>
+  </div>
+
+  </div>
+</div>

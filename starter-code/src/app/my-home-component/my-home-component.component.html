@@ -1,4 +1,8 @@
 <div class="center">
     <div class= "filmdiv" *ngFor="let films of this.service.movies">
-      <b style="font-size:14px">{{films.title}}</b> <br> Room: {{films.room}} <br> Hour: {{films.hour}}<img style="width:150px; height:250px; padding-top:15px;" src="{{films.poster}}" alt="images"></div>
+      <b style="font-size:14px">{{films.title}}</b> <br> Room: {{films.room}} <br> Hour: {{films.hour}}
+      <img style="width:150px; height:250px; padding-top:15px;" src="{{films.poster}}" alt="images">
+      <!-- <a style="margin-top:15px;" [routerLink]="movie"><button>movie</button></a> -->
+      <a [routerLink]="['../movie', films.id]"><button>movie</button></a>
+    </div>
 </div>

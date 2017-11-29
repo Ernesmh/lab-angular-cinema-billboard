@@ -128,7 +128,7 @@ export class movieService {
   };
 
   getMovie(id) {
-    return this.movies[id];
+    return this.movies.filter(e => e.id == id)[0];
   }
 
 }
