@@ -1,3 +1,4 @@
-<p>
-  my-home-component works!
-</p>
+<div class="center">
+    <div class= "filmdiv" *ngFor="let films of this.service.movies">
+      <b style="font-size:14px">{{films.title}}</b> <br> Room: {{films.room}} <br> Hour: {{films.hour}}<img style="width:150px; height:250px; padding-top:15px;" src="{{films.poster}}" alt="images"></div>
+</div>

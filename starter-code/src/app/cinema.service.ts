@@ -9,6 +9,8 @@ export interface service{
   year:number;
   director:string;
   actors:Array<string>;
+  room:number;
+  hour:Array<string>;
 }
 @Injectable()
 export class movieService {
@@ -30,7 +32,9 @@ export class movieService {
         "William Sadler",
         "Clancy Brown",
         "Gil Bellows"
-      ]
+      ],
+      room: 1,
+      hour: ["18.00", " 20.00", " 22.00"]
     },
     {
       id: 2,
@@ -49,7 +53,9 @@ export class movieService {
         "Richard S. Castellano",
         "Robert Duvall",
         "Sterling Hayden"
-      ]
+      ],
+      room: 2,
+      hour: ["18.00", " 20.00", " 22.00"]
     },
     {
       id: 3,
@@ -68,7 +74,9 @@ export class movieService {
         "Robert De Niro",
         "John Cazale",
         "Talia Shire"
-      ]
+      ],
+      room: 3,
+      hour: ["18.00", " 20.00", " 22.00"]
     },
     {
       id: 4,
@@ -87,7 +95,9 @@ export class movieService {
         "Michael Caine",
         "Maggie Gyllenhaal",
         "Gary Oldman"
-      ]
+      ],
+      room: 4,
+      hour: ["18.00", " 20.00", " 22.00"]
     },
     {
       id: 5,
@@ -106,11 +116,13 @@ export class movieService {
         "Caroline Goodall",
         "Jonathan Sagall",
         "Embeth Davidtz"
-      ]
+      ],
+      room: 5,
+      hour: ["18.00", " 20.00", " 22.00"]
     }
   ]
-  
-  getMovies() {
+
+  getMovies(id:number, poster:string, title:string) {
     console.log(this.movies);
     return this.movies;
   };

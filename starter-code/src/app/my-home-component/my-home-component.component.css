@@ -1,0 +1,12 @@
+.center{
+  width: 90%;
+  margin: 30px auto;
+}
+
+.filmdiv{
+  width: 15%;
+  display: inline-block;
+  text-align:center;
+  padding:10px;
+  font-size:12px;
+}
